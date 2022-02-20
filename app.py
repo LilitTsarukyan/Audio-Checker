@@ -2,14 +2,14 @@ import json
 import os
 
 
-#from playsound import playsound
+from playsound import playsound
 
 output_data = {}
 
 
 def process_next_file(file_name, file_path):
     print(f"Playing file: {file_name}")
-    #playsound(file_path)
+    playsound(file_path)
 
     result = None
     while result not in ["c", "n"]:
